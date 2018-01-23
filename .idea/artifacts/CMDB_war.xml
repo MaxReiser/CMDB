@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CMDB:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="CMDB-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CMDB:war exploded" />
+    </root>
+  </artifact>
+</component>
