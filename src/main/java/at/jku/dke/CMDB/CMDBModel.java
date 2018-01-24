@@ -785,8 +785,8 @@ public class CMDBModel implements Serializable {
 
 	/**
 	 * Abfragen der Hardware, die momentan dem Projekt zugeordnet ist
-	 * @param projekt
-	 * @return
+	 * @param projekt das Projekt
+	 * @return Liste der Hardware
 	 */
 	public Collection<Hardware> getProjektHardware(String projekt) {
 		List<Hardware> projektHardware = new LinkedList<>();
