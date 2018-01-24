@@ -17,7 +17,7 @@ import org.apache.jena.update.UpdateRequest;
 
 /**
  * 
- * Das Model für die Kommunikation mit dem Fuseki Server
+ * Das Model fuer die Kommunikation mit dem Fuseki Server
  *
  */
 public class CMDBModel implements Serializable {
@@ -137,7 +137,7 @@ public class CMDBModel implements Serializable {
 	}
 
 	/**
-	 * Hinzufügen der Peripherie zu den Workstations
+	 * Hinzufuegen der Peripherie zu den Workstations
 	 */
 	private void addPeripherieToWorkstations() {
 		for(Workstation w : workstations) {
@@ -188,7 +188,7 @@ public class CMDBModel implements Serializable {
 	}
 
 	/**
-	 * Hinzufügen der Software zu den Workstations
+	 * Hinzufuegen der Software zu den Workstations
 	 */
 	private void addSoftwareToWorkstations() {
 		for(Workstation w : workstations) {
@@ -403,7 +403,7 @@ public class CMDBModel implements Serializable {
 	}
 	
 	/**
-	 * Hinzufügen der Workstations zu den Mitarbeitern
+	 * Hinzufuegen der Workstations zu den Mitarbeitern
 	 */
 	private void addWorkstationsToMitarbeiter() {
 		for(Mitarbeiter ma : mitarbeiter) {
@@ -489,8 +489,8 @@ public class CMDBModel implements Serializable {
 	}
 	
 	/**
-	 * Abfragen der noch verfügbaren Hardware
-	 * @return Liste der verfügbaren Hardware
+	 * Abfragen der noch verfuegbaren Hardware
+	 * @return Liste der verfuegbaren Hardware
 	 */
 	public List<Hardware> getAvailableHardware() {
 		List<Hardware> availableHardware = new LinkedList<>();
@@ -889,7 +889,7 @@ public class CMDBModel implements Serializable {
 	}
 	
 	/**
-	 * Update Statement zum Hinzufügen einer Ressource zu einem Projekt
+	 * Update Statement zum Hinzufuegen einer Ressource zu einem Projekt
 	 * @param projekt das Projekt
 	 * @param resource die Ressource
 	 */

@@ -140,7 +140,7 @@ public class cmdbUI extends UI {
 		availableMitarbeiter.addClickListener(e ->{
 			if(projekt != null) {
 				detailContainer.removeAllComponents();
-				Button addMitarbeiter = new Button("hinzufügen");
+				Button addMitarbeiter = new Button("hinzufuegen");
 				addMitarbeiter.addClickListener(ev->{
 					Set<Mitarbeiter> mitarbeiter = mitarbeiterGrid.getSelectedItems();
 					if(!mitarbeiter.isEmpty()) {
@@ -161,7 +161,7 @@ public class cmdbUI extends UI {
 		availableHardware.addClickListener(e -> {
 			if(projekt != null) {
 				detailContainer.removeAllComponents();
-				Button addHardware = new Button("hinzufügen");
+				Button addHardware = new Button("hinzufuegen");
 				addHardware.addClickListener(ev->{
 					Set<Hardware> hardware = hardwareGrid.getSelectedItems();
 					if(!hardware.isEmpty()) {
@@ -177,7 +177,7 @@ public class cmdbUI extends UI {
 				detailContainer.addComponents(hardwareContainer, addHardware);
 			}
 			else {
-				Notification.show("Fehler", "Kein Projekt ausgewählt", Notification.Type.ERROR_MESSAGE);
+				Notification.show("Fehler", "Kein Projekt ausgewaehlt", Notification.Type.ERROR_MESSAGE);
 			}
 		});
 		availableSoftware.addStyleName(ValoTheme.BUTTON_BORDERLESS_COLORED);
@@ -185,7 +185,7 @@ public class cmdbUI extends UI {
 		availableSoftware.addClickListener(e -> {
 			if(projekt != null) {
 				detailContainer.removeAllComponents();
-				Button addSoftware = new Button("hinzufügen");
+				Button addSoftware = new Button("hinzufuegen");
 				addSoftware.addClickListener(ev->{
 					Set<Software> software = softwareGrid.getSelectedItems();
 					if(!software.isEmpty()) {
@@ -201,7 +201,7 @@ public class cmdbUI extends UI {
 				detailContainer.addComponents(addSoftware, mitarbeiterContainer);
 			}
 			else {
-				Notification.show("Fehler", "Kein Projekt ausgewählt", Notification.Type.ERROR_MESSAGE);
+				Notification.show("Fehler", "Kein Projekt ausgewaehlt", Notification.Type.ERROR_MESSAGE);
 			}
 		});
 		detailButton.addStyleName(ValoTheme.BUTTON_BORDERLESS_COLORED);
@@ -264,7 +264,7 @@ public class cmdbUI extends UI {
 				}
 			}
 			else {
-				Notification.show("Fehler", "Kein Projekt ausgewählt", Notification.Type.ERROR_MESSAGE);
+				Notification.show("Fehler", "Kein Projekt ausgewaehlt", Notification.Type.ERROR_MESSAGE);
 			}
 		});
 		buttonContainer.addComponentsAndExpand(detailButton, availableMitarbeiter, availableHardware, availableSoftware);
